@@ -1,0 +1,29 @@
+body{
+	margin:0
+}
+.container {
+	margin: 0 auto;
+    background-color: #aaa;
+    height: 500px;
+    position: relative;
+    width: 1002px;
+}
+.hidden{
+	display: none;
+	
+	}
+.myDiv {
+    2background-color: cyan;
+    border: 1px dashed;
+    box-sizing: border-box;
+    display: inline-block;
+    2height: 500px;
+    position: absolute;
+    width: 0;
+    overflow: hidden;
+}
+.images {
+    display: none;
+}
+.myDivImg {
+}

@@ -1,0 +1,43 @@
+currentGood
+newGood
+
+ПОИСК ЭЛЕМЕНТА
+	.find('.b-good__image')
+	
+СЧИТЫВАНИЕ ИНФОРМАЦИИ
+image		.attr('src')
+name		.html()
+price		.html()
+qty			.val()
+
+ЗАПИСЬ ИНФОРМАЦИИ (*** - считанное)
+image		.attr('src', ***)
+name		.html(***)
+price		.html(***)
+qty			.val(***)
+
+newGood.find('.b-good__image')			.attr('src',currentGood.find('.b-good__image').attr('src'));
+newGood.find('.b-good__name')			.html(		currentGood.find('.b-good__name').html());
+newGood.find('.b-good__price')			.html(		currentGood.find('.b-good__price').html());
+newGood.find('.b-order-form__quantity')	.val(		currentGood.find('.b-order-form__quantity').val());
+
+д/з:
+
+функция с вызовом:
+c.copyData(currentGood, newGood, [
+	 '.b-good__image'
+	,'.b-good__name'
+	,'.b-order-form__quantity'
+	]);
+	
+	где 
+	currentGood - объект источник ряда данных
+	newGood - объект приёмник ряда данных
+	3 параметр - массив селекторов для доступа к элементам хранящим данные
+	
+	как узнать тип тега?
+	
+	$(...).prop('tagName') // IMG
+	
+	
+
